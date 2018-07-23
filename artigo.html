@@ -13,32 +13,50 @@
 	<!-- /HEAD REPRESENTA O FIM DO CABEÇALHO DO DOCUMENTO HTML -->
 	<!-- BODY REPRESENTA O INÍCIO DO CORPO DO DOCUMENTO HTML -->
 	<body>
-		<!-- H1 USADA PARA TÍTULOS DO BODY  H1 AO H6, ONDE H1 É O MAIS IMPORTANTE, O TAMANHO DA FONTE COLOCAR NO CSS, NO HTML O QUE IMPORTA É A SEMÂNTICA PARA O NAVEGADOR ENTENDER -->
-		<!-- A (ÂNCORA) SERVE PARA LINKS PARA OUTROS SITES OU OUTROS LUGARES DA PÁGINA, href serve para indicar a url, target blank serve para abrir uma nova aba -->
-		<h1>Como evitar redeploy em projetos Java? Conheça o <a href="http://www.algaworks.com" target="_blank">JRebel</a></h1>
-		<!-- PARA COLOCAR IMAGENS  PODE COLOCAR O CAMINHO COMPLETO OU RELATIVO COMO ESTÁ O NAVEGADOR
-			VAI LENDO O HTML ATÉ CHEGAR A IMAGEM, QUANDO CHEGA ELE VAI BUSCAR ELA EM PARALELO width determina a largura
-			se não colocar altura ele deixa proporcional a largura, bom usar para não quebrar layout
-			alt é bom deixar para cegos e os motores de busca precisam saber também do que se trata a imagem-->
-		<a href="http://www.algaworks.com"><img src="img/jrebel.jpeg" width="390" height="210" alt="JRebel"></a>
-		<!-- P DEFINE UM PARÁGRAFO -->
-		<!-- MARK DEFINE TEXTO MAIS RELEVANTE-->
-		<p>Será que é possível evitar o <mark>redeploy</mark> em projetos Java ao alterar ou adicionar classes e arquivos de configurações?</p>
+		<!-- HEADER É O CABEÇALHO DÁ PAGINA, COMO O BROWSER ENTENDE -->
+		<header>
+			<p>Blog do João</p>
+		</header>
+		<!-- ARTICLE REPRESENTA O ARTIGO DA PÁGINA, COMO O BROWSER E O MOTOR DE BUSCA ENTENDE, MELHOR QUE DEIXAR DIV -->
+		<article>
+			<!-- CABEÇALHO DO ARTIGO -->
+			<header>
+				<!-- H1 USADA PARA TÍTULOS DO BODY  H1 AO H6, ONDE H1 É O MAIS IMPORTANTE, O TAMANHO DA FONTE COLOCAR NO CSS, NO HTML O QUE IMPORTA É A SEMÂNTICA PARA O NAVEGADOR ENTENDER -->
+				<!-- A (ÂNCORA) SERVE PARA LINKS PARA OUTROS SITES OU OUTROS LUGARES DA PÁGINA, href serve para indicar a url, target blank serve para abrir uma nova aba -->
+				<h1>Como evitar redeploy em projetos Java? Conheça o <a href="http://www.algaworks.com" target="_blank">JRebel</a></h1>
+				<!-- PARA COLOCAR IMAGENS  PODE COLOCAR O CAMINHO COMPLETO OU RELATIVO COMO ESTÁ O NAVEGADOR
+				VAI LENDO O HTML ATÉ CHEGAR A IMAGEM, QUANDO CHEGA ELE VAI BUSCAR ELA EM PARALELO width determina a largura
+				se não colocar altura ele deixa proporcional a largura, bom usar para não quebrar layout
+				alt é bom deixar para cegos e os motores de busca precisam saber também do que se trata a imagem-->
+				<a href="http://www.algaworks.com"><img src="img/jrebel.jpeg" width="390" height="210" alt="JRebel"></a>
+			</header>
+			<!-- P DEFINE UM PARÁGRAFO -->
+			<!-- MARK DEFINE TEXTO MAIS RELEVANTE-->
+			<p>Será que é possível evitar o <mark>redeploy</mark> em projetos Java ao alterar ou adicionar classes e arquivos de configurações?</p>
 
-		<p>Já imaginou quanto tempo você economizaria se o redeploy não fosse necessário ao adicionar um novo método em uma classe ou alterar um XML ou anotação do seu framework preferido?</p>
-		<!-- DEFINE O SUBTÍTULO NA SEMÂNTICA DO NAVEGADOR -->
-		<h2>JRebel: a solução</h2>
-		<!-- BR (BREAK) SERVE PARA QUEBRAR PARTE DE UM CONTEÚDO -->
-		<!-- EM DÁ ENFASE NO TEXTO SELECIONADO PARA O NAVEGADOR-->
-		<!-- STRONG O TEXTO É MAIS IMPORTANTE PARA O NAVEGADOR-->
-		<p>Com JRebel <em>isso é</em> possível.<br> Você pode trabalhar em projetos Java com muito <strong>mais produtividade.</strong></p>
-		<!-- SUBSUBTÍTULO -->
-		<h3>Download</h3>
+			<p>Já imaginou quanto tempo você economizaria se o redeploy não fosse necessário ao adicionar um novo método em uma classe ou alterar um XML ou anotação do seu framework preferido?</p>
+			<!-- DEFINE O SUBTÍTULO NA SEMÂNTICA DO NAVEGADOR -->
+			<h2>JRebel: a solução</h2>
+			<!-- BR (BREAK) SERVE PARA QUEBRAR PARTE DE UM CONTEÚDO -->
+			<!-- EM DÁ ENFASE NO TEXTO SELECIONADO PARA O NAVEGADOR-->
+			<!-- STRONG O TEXTO É MAIS IMPORTANTE PARA O NAVEGADOR-->
+			<p>Com JRebel <em>isso é</em> possível.<br> Você pode trabalhar em projetos Java com muito <strong>mais produtividade.</strong></p>
+			<!-- SUBSUBTÍTULO -->
+			<h3>Download</h3>
 
-		<p>Para fazer download, acesse a página do JRebel e faça o seu cadastro.</p>
+			<p>Para fazer download, acesse a página do JRebel e faça o seu cadastro.</p>
 
-		<!-- Para chamar outros arquivos também pode o elemento A -->
-		<p>Gostou do artigo? Entre em <a href="contato.html">contato</a>.</p>
+			<!-- Para chamar outros arquivos também pode o elemento A -->
+			<p>Gostou do artigo? Entre em <a href="contato.html">contato</a>.</p>
+		</article>
+		<!-- ASIDE É SEPARADO DO CONTEÚDO PRINCIPAL -->
+		<aside>
+			<p>Anúncios da página</p>
+		</aside>
+		<!-- FOOTER É O RODAPÉ DA PÁGINA, É COMO O BROWSER E O MOTOR DE BUSCA ENTENDE -->
+		<footer>
+			<p>Todos os direitos reservados</p>
+		</footer>
 	</body>
 	<!-- /BODY REPRESENTA O FIM DO CORPO DO DOCUMENTO HTML -->
 </html>
